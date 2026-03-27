@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 
 import { Header } from "../components/Header";
 import { AppShowcaseSection } from "../sections/AppShowCaseSection";
+import { AssistantsSection } from "../sections/AssistantsSection";
 import { FooterCtaSection } from "../sections/FooterCtaSection";
 import { FeaturesSection } from "../sections/FeaturesSection";
 import { HeroSection } from "../sections/HeroSection";
@@ -37,6 +38,7 @@ export function LandingPage() {
           <StoreButtonsSection />
           {/* <LogosSection /> */}
           <FeaturesSection />
+          <AssistantsSection />
         </div>
         <div style={FOOTER_GRADIENT_WRAPPER_STYLE}>
           <FooterCtaSection />

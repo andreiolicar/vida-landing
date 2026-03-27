@@ -68,10 +68,12 @@ vida-landing/
     |   `-- LandingPage.tsx
     |-- sections/
     |   |-- AppShowCaseSection.tsx
+    |   |-- BrainSection.tsx
     |   |-- FeaturesSection.tsx
     |   |-- FooterCtaSection.tsx
     |   |-- HeroSection.tsx
     |   |-- LogosSection.tsx
+    |   |-- SiteFooter.tsx
     |   `-- StoreButtonsSection.tsx
     `-- styles/
         `-- global.css
