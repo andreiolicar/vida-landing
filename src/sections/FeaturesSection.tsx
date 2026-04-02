@@ -23,32 +23,32 @@ const FEATURES: FeatureCardData[] = [
   {
     id: "review",
     imageSrc: card1Img,
-    imageAlt: "Dashboard card for interaction review",
+    imageAlt: "Tela do VIDA mostrando apoio para decisões do dia",
     tint: "#EAF3FF",
-    headline: "Review 100% of interactions in seconds.",
-    body: "See the full picture of your users' daily activities across schedule, medication, and support at a glance.",
+    headline: "Entenda melhor o momento antes de escolher.",
+    body: "O VIDA organiza sinais do seu dia, reduz ruído mental e ajuda você a enxergar o que realmente importa antes de decidir.",
   },
   {
     id: "training",
     imageSrc: card2Img,
-    imageAlt: "Daily plan card for personalized care",
+    imageAlt: "Tela do VIDA sugerindo caminhos possíveis para uma escolha",
     tint: "#DDEEFF",
-    headline: "Generate custom daily plans for each user.",
-    body: "Guide your users with AI-powered routines that adapt to their real needs, habits, and goals.",
+    headline: "Receba sugestões quando bater a indecisão.",
+    body: "Quando você trava entre opções, o app propõe caminhos possíveis com base no seu contexto, nas suas preferências e no que já funcionou antes.",
   },
   {
     id: "satisfaction",
     imageSrc: card3Img,
-    imageAlt: "Engagement card with reminders and activity tracking",
+    imageAlt: "Tela do VIDA mostrando evolução nas decisões e hábitos",
     tint: "#D3E6FF",
-    headline: "Watch user engagement increase.",
-    body: "Activity tracking and smart reminders work together to improve every interaction, day after day.",
+    headline: "Aprenda com as escolhas que você já fez.",
+    body: "Ao longo do tempo, o VIDA identifica padrões, entende seu estilo de decisão e oferece uma ajuda cada vez mais útil no momento certo.",
   },
 ];
 
 export function FeaturesSection() {
   return (
-    <section className="relative w-full pt-6 pb-24 md:pb-28">
+    <section className="relative w-full py-24 md:py-28">
       <Container size="xl" className="flex flex-col items-center">
         <motion.div
           custom={0.08}
@@ -60,7 +60,7 @@ export function FeaturesSection() {
           <SectionTitle color={SOFT_HEADING_COLOR}>
             Tudo o que você precisa
             <br />
-            em um só lugar
+            para decidir com mais clareza
           </SectionTitle>
         </motion.div>
 

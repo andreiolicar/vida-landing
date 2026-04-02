@@ -81,9 +81,9 @@ function GlowingButton({
           "inset 0 1px 0 rgba(255,255,255,0.30), 0 2px 10px rgba(16,79,200,0.10)",
         color: "#FFFFFF",
       }}
-    >
+      >
       <span className="text-[14px] font-semibold leading-none tracking-[-0.02em]">
-        Get Started
+        Baixar o app
       </span>
       <ArrowRightIcon />
     </motion.a>
@@ -118,7 +118,7 @@ export function FooterCtaSection() {
   const [isButtonHovered, setIsButtonHovered] = useState(false);
 
   return (
-    <section className="relative w-full pb-24 pt-8 md:pb-32 md:pt-12">
+    <section className="relative w-full py-24 md:py-28">
       <Container size="xl">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
@@ -157,7 +157,7 @@ export function FooterCtaSection() {
                     "inset 0 1px 0 rgba(255,255,255,0.36), 0 2px 8px rgba(40,94,187,0.12)",
                 }}
               >
-                Your Site. Always Up To Date
+                Ajuda na hora em que a dúvida aparece
               </LiquidGlassBadge>
 
               <h2
@@ -177,9 +177,9 @@ export function FooterCtaSection() {
                   color: "transparent",
                 }}
               >
-                Build beautiful social feeds
+                Tenha mais clareza
                 <br />
-                for your website
+                para decidir melhor
               </h2>
 
               <div style={{ marginTop: "36px", width: "100%" }}>
@@ -244,7 +244,7 @@ export function FooterCtaSection() {
               >
                 <img
                   src={computerAppImg}
-                  alt="VIDA dashboard preview on desktop"
+                  alt="Prévia do aplicativo VIDA em uma tela maior"
                   style={{
                     display: "block",
                     width: "calc(100% + 24px)",
@@ -295,7 +295,7 @@ export function FooterCtaSection() {
                 textShadow: "0 1px 4px rgba(35,73,153,0.22)",
               }}
             >
-              Feeds made with {"\u2665"} for all your websites.
+              Pequenas decisões melhores constroem dias mais leves.
             </div>
           </div>
         </motion.div>

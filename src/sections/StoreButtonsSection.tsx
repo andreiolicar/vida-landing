@@ -68,19 +68,19 @@ function StoreButton({
 
 export function StoreButtonsSection() {
   return (
-    <section className="relative w-full py-8 md:py-10">
+    <section className="relative w-full py-12 md:py-16">
       <Container size="md">
         <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-5">
           <StoreButton
             href="#app-store"
-            label="Download on the"
+            label="Baixe na"
             store="App Store"
             delay={0.1}
             icon={<AppleIcon />}
           />
           <StoreButton
             href="#play-store"
-            label="GET IT ON"
+            label="Disponível no"
             store="Play Store"
             delay={0.1}
             icon={<GooglePlayIcon />}

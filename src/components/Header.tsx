@@ -161,10 +161,10 @@ function NavItem({
 // ─── Mobile Menu ──────────────────────────────────────────────────────────────
 function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
   const navLinks = [
-    { href: "#products", label: "Products" },
-    { href: "#docs", label: "Docs" },
-    { href: "#changelog", label: "Changelog" },
-    { href: "#blog", label: "Blog" },
+    { href: "#products", label: "Como funciona" },
+    { href: "#docs", label: "Para quem é" },
+    { href: "#changelog", label: "Recursos" },
+    { href: "#blog", label: "Perguntas" },
   ];
 
   useEffect(() => {
@@ -197,7 +197,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
             className="fixed top-3 left-3 right-3 z-modal overflow-hidden rounded-2xl border border-border bg-background/96 shadow-xl backdrop-blur-2xl"
             role="dialog"
             aria-modal="true"
-            aria-label="Navigation menu"
+            aria-label="Menu de navegação"
           >
             <div className="flex items-center justify-between border-b border-border px-5 py-4">
               <a href="/" aria-label="VIDA home">
@@ -211,7 +211,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
               <button
                 onClick={onClose}
                 className="flex h-8 w-8 items-center justify-center rounded-lg text-text-secondary transition-colors duration-[140ms] hover:bg-background-muted hover:text-text-primary"
-                aria-label="Close menu"
+                aria-label="Fechar menu"
               >
                 <svg
                   width="15"
@@ -252,7 +252,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                 scrolled={true}
                 onClick={onClose}
               >
-                Log in
+                Entrar
               </HeaderButton>
               <HeaderButton
                 variant="signup"
@@ -260,7 +260,7 @@ function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
                 scrolled={true}
                 onClick={onClose}
               >
-                Sign up
+                Baixar app
               </HeaderButton>
             </div>
           </motion.div>
@@ -291,10 +291,10 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { href: "#products", label: "Products" },
-    { href: "#docs", label: "Docs" },
-    { href: "#changelog", label: "Changelog" },
-    { href: "#blog", label: "Blog" },
+    { href: "#products", label: "Como funciona" },
+    { href: "#docs", label: "Para quem é" },
+    { href: "#changelog", label: "Recursos" },
+    { href: "#blog", label: "Perguntas" },
   ];
 
   return (
@@ -415,7 +415,7 @@ export function Header() {
             <div className="flex items-center justify-end gap-2 shrink-0">
               <div className="hidden md:flex items-center gap-2">
                 <HeaderButton variant="login" href="#login" scrolled={scrolled}>
-                  Log in
+                  Entrar
                 </HeaderButton>
                 {scrolled && (
                   <HeaderButton
@@ -423,7 +423,7 @@ export function Header() {
                     href="#signup"
                     scrolled={scrolled}
                   >
-                    Sign up
+                    Baixar app
                   </HeaderButton>
                 )}
               </div>
@@ -439,7 +439,7 @@ export function Header() {
                 }}
                 transition={{ duration: 0.18, ease: EASE }}
                 className="md:hidden flex items-center justify-center rounded-full p-[7px]"
-                aria-label="Open menu"
+                aria-label="Abrir menu"
                 aria-expanded={mobileOpen}
               >
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none">

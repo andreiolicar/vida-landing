@@ -2,6 +2,7 @@ import type { CSSProperties, ReactNode } from "react";
 
 type SectionTitleProps = {
   children: ReactNode;
+  id?: string;
   align?: "left" | "center";
   maxWidth?: string;
   margin?: string;
@@ -11,7 +12,7 @@ type SectionTitleProps = {
 
 const BASE_STYLE: CSSProperties = {
   fontFamily: "Nunito, sans-serif",
-  fontWeight: 800,
+  fontWeight: 700,
   fontSize: "clamp(32px, 4.5vw, 48px)",
   lineHeight: 1.15,
   letterSpacing: "-0.03em",
@@ -19,6 +20,7 @@ const BASE_STYLE: CSSProperties = {
 
 export function SectionTitle({
   children,
+  id,
   align = "center",
   maxWidth = "680px",
   margin = "0 auto 18px",
@@ -27,6 +29,7 @@ export function SectionTitle({
 }: SectionTitleProps) {
   return (
     <h2
+      id={id}
       style={{
         ...BASE_STYLE,
         margin,

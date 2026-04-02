@@ -99,15 +99,15 @@ type Feature = {
 };
 
 const LEFT_FEATURES: Feature[] = [
-  { id: "calendar", icon: <IconCalendar />, label: "Daily Schedule" },
-  { id: "pill", icon: <IconPill />, label: "Medication" },
-  { id: "list", icon: <IconList />, label: "Activities" },
+  { id: "calendar", icon: <IconCalendar />, label: "Rotina do dia" },
+  { id: "pill", icon: <IconPill />, label: "Prioridades" },
+  { id: "list", icon: <IconList />, label: "Próximo passo" },
 ];
 
 const RIGHT_FEATURES: Feature[] = [
-  { id: "heart", icon: <IconHeart />, label: "Health Tracking" },
-  { id: "location", icon: <IconLocation />, label: "Navigation" },
-  { id: "bell", icon: <IconBell />, label: "Reminders" },
+  { id: "heart", icon: <IconHeart />, label: "Contexto" },
+  { id: "location", icon: <IconLocation />, label: "Direção" },
+  { id: "bell", icon: <IconBell />, label: "Lembretes" },
 ];
 
 type ConnectorLineProps = {
@@ -189,7 +189,7 @@ function PhoneMockup({
       />
       <img
         src={appHandImg}
-        alt="VIDA app running on a phone"
+        alt="Aplicativo VIDA em uso no celular"
         style={{
           ...PHONE_IMAGE_STYLE,
           zIndex: imageZIndex,
@@ -416,10 +416,7 @@ function MobileShowcase() {
 
 export function AppShowcaseSection() {
   return (
-    <section
-      className="relative w-full"
-      style={{ paddingTop: "24px", paddingBottom: "0" }}
-    >
+    <section className="relative w-full py-12 md:py-16">
       <DesktopShowcase />
       <MobileShowcase />
     </section>

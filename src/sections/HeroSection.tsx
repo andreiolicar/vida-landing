@@ -28,7 +28,7 @@ export function HeroSection() {
           animate="visible"
           style={{ marginBottom: "28px" }}
         >
-          <LiquidGlassBadge>100% Custom No-Code Feeds</LiquidGlassBadge>
+          <LiquidGlassBadge>Copiloto para microdecisões</LiquidGlassBadge>
         </motion.div>
 
         <motion.h1
@@ -36,7 +36,7 @@ export function HeroSection() {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="max-w-[700px] font-extrabold leading-tight tracking-[-0.03em]"
+          className="max-w-[920px] font-extrabold leading-tight tracking-[-0.03em]"
           style={{
             fontSize: "clamp(40px, 6vw, 68px)",
             lineHeight: 1.1,
@@ -48,9 +48,9 @@ export function HeroSection() {
             color: "transparent",
           }}
         >
-          The workspace your
+          Decida melhor nos momentos
           <br />
-          team actually uses
+          que mais travam você
         </motion.h1>
 
         <motion.p
@@ -65,8 +65,8 @@ export function HeroSection() {
             marginBottom: "36px",
           }}
         >
-          Bring your projects, people, and processes into one calm, focused
-          space built for modern teams that move fast.
+          O VIDA entra em cena quando você está em dúvida entre duas ou mais
+          opções, sugere caminhos possíveis e aprende com o seu jeito de decidir.
         </motion.p>
       </Container>
     </section>
