@@ -1,6 +1,6 @@
 import type { CSSProperties, ReactNode } from "react";
 
-type GlassCardVariant = "assistants" | "light";
+type GlassCardVariant = "decisionAi" | "light";
 
 type GlassCardProps = {
   children: ReactNode;
@@ -12,7 +12,7 @@ type GlassCardProps = {
 const BASE_CLASS_NAME = "relative overflow-hidden rounded-[28px]";
 
 const CARD_STYLES: Record<GlassCardVariant, CSSProperties> = {
-  assistants: {
+  decisionAi: {
     WebkitBackdropFilter: "blur(18px)",
     backdropFilter: "blur(18px)",
     backgroundColor: "rgba(255,255,255,0.10)",
@@ -31,7 +31,7 @@ const CARD_STYLES: Record<GlassCardVariant, CSSProperties> = {
 };
 
 const OVERLAY_STYLES: Record<GlassCardVariant, CSSProperties> = {
-  assistants: {
+  decisionAi: {
     backgroundImage:
       "linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.06))",
   },
@@ -42,7 +42,7 @@ const OVERLAY_STYLES: Record<GlassCardVariant, CSSProperties> = {
 };
 
 const GLOW_STYLES: Record<GlassCardVariant, CSSProperties> = {
-  assistants: {
+  decisionAi: {
     background:
       "radial-gradient(circle at center top, rgba(62,149,255,0.38), rgba(62,149,255,0) 72%)",
     opacity: 0.8,

@@ -141,7 +141,7 @@ const CAPABILITY_ENTER_MS = 500;
 
 type PhonePhase = "idle" | "exiting" | "entering";
 
-export function AssistantsSection() {
+export function DecisionAISection() {
   const [activeCapability, setActiveCapability] = useState(0);
   const [queuedCapability, setQueuedCapability] = useState<number | null>(null);
   const [phonePhase, setPhonePhase] = useState<PhonePhase>("idle");
@@ -224,7 +224,7 @@ export function AssistantsSection() {
               </div>
 
               <div className="mt-14 grid gap-4 xl:grid-cols-[320px_minmax(0,1fr)]">
-                <GlassCard variant="assistants" glow className="p-8">
+                <GlassCard variant="decisionAi" glow className="p-8">
                   <p className="text-sm leading-5 text-white">Capacidades</p>
 
                   <div className="mt-14 flex flex-col gap-4">
@@ -268,7 +268,7 @@ export function AssistantsSection() {
                                 "absolute inset-[5px] rounded-full border border-white/65",
                                 CAPABILITY_ITEM_TRANSITION_CLASS,
                                 isVisibleActive &&
-                                  "vida-assistants-pulse opacity-100",
+                                  "vida-decision-ai-pulse opacity-100",
                                 !isVisibleActive && "scale-[0.9] opacity-0",
                               )}
                             />
@@ -302,7 +302,7 @@ export function AssistantsSection() {
                   </div>
                 </GlassCard>
 
-                <GlassCard variant="assistants" glow>
+                <GlassCard variant="decisionAi" glow>
                   <div className="grid min-h-[385px] md:grid-cols-[minmax(280px,430px)_minmax(0,1fr)]">
                     <div
                       className="relative min-h-[280px] overflow-hidden border-b border-white/6 md:border-b-0 md:border-r md:border-r-white/6"
@@ -356,7 +356,7 @@ export function AssistantsSection() {
       </Container>
 
       <style>{`
-        @keyframes vida-assistants-pulse {
+        @keyframes vida-decision-ai-pulse {
           0%, 100% {
             transform: scale(0.92);
             opacity: 0.35;
@@ -367,7 +367,7 @@ export function AssistantsSection() {
           }
         }
 
-        @keyframes vida-assistants-scan {
+        @keyframes vida-decision-ai-scan {
           0% {
             transform: translateX(-18px);
             opacity: 0;
@@ -382,7 +382,7 @@ export function AssistantsSection() {
           }
         }
 
-        @keyframes vida-assistants-float {
+        @keyframes vida-decision-ai-float {
           0%,
           100% {
             transform: translateY(0px);
@@ -392,7 +392,7 @@ export function AssistantsSection() {
           }
         }
 
-        @keyframes vida-assistants-radar {
+        @keyframes vida-decision-ai-radar {
           0% {
             transform: scale(0.28);
             opacity: 0.82;
@@ -403,7 +403,7 @@ export function AssistantsSection() {
           }
         }
 
-        @keyframes vida-assistants-carousel {
+        @keyframes vida-decision-ai-carousel {
           from {
             transform: translateY(0);
           }
@@ -412,7 +412,7 @@ export function AssistantsSection() {
           }
         }
 
-        @keyframes vida-assistants-spin-cw {
+        @keyframes vida-decision-ai-spin-cw {
           from {
             transform: rotate(0deg);
           }
@@ -421,7 +421,7 @@ export function AssistantsSection() {
           }
         }
 
-        @keyframes vida-assistants-spin-ccw {
+        @keyframes vida-decision-ai-spin-ccw {
           from {
             transform: rotate(360deg);
           }
@@ -549,32 +549,32 @@ export function AssistantsSection() {
           }
         }
 
-        .vida-assistants-pulse {
-          animation: vida-assistants-pulse 2.8s ease-in-out infinite;
+        .vida-decision-ai-pulse {
+          animation: vida-decision-ai-pulse 2.8s ease-in-out infinite;
         }
 
-        .vida-assistants-scan {
-          animation: vida-assistants-scan 3.2s linear infinite;
+        .vida-decision-ai-scan {
+          animation: vida-decision-ai-scan 3.2s linear infinite;
         }
 
-        .vida-assistants-float {
-          animation: vida-assistants-float 5.4s ease-in-out infinite;
+        .vida-decision-ai-float {
+          animation: vida-decision-ai-float 5.4s ease-in-out infinite;
         }
 
-        .vida-assistants-radar {
-          animation: vida-assistants-radar 2.4s linear infinite;
+        .vida-decision-ai-radar {
+          animation: vida-decision-ai-radar 2.4s linear infinite;
         }
 
-        .vida-assistants-carousel {
-          animation: vida-assistants-carousel 8.8s linear infinite;
+        .vida-decision-ai-carousel {
+          animation: vida-decision-ai-carousel 8.8s linear infinite;
         }
 
-        .vida-assistants-spin-cw {
-          animation: vida-assistants-spin-cw 16s linear infinite;
+        .vida-decision-ai-spin-cw {
+          animation: vida-decision-ai-spin-cw 16s linear infinite;
         }
 
-        .vida-assistants-spin-ccw {
-          animation: vida-assistants-spin-ccw 12s linear infinite;
+        .vida-decision-ai-spin-ccw {
+          animation: vida-decision-ai-spin-ccw 12s linear infinite;
         }
 
         .vida-shield-fill-cw,
@@ -619,12 +619,12 @@ export function AssistantsSection() {
           animation: vida-energy-out-b 5.6s linear infinite;
         }
 
-        .vida-assistants-counter-outer {
-          animation: vida-assistants-spin-cw 12s linear infinite;
+        .vida-decision-ai-counter-outer {
+          animation: vida-decision-ai-spin-cw 12s linear infinite;
         }
 
-        .vida-assistants-counter-inner {
-          animation: vida-assistants-spin-ccw 16s linear infinite;
+        .vida-decision-ai-counter-inner {
+          animation: vida-decision-ai-spin-ccw 16s linear infinite;
         }
       `}</style>
     </section>
@@ -677,7 +677,7 @@ function CapabilityPhonePreview({
 function HighlightCardView({ card }: { card: HighlightCard }) {
   return (
     <GlassCard
-      variant="assistants"
+      variant="decisionAi"
       glow
       className="flex min-h-[340px] flex-col justify-between px-8 py-10"
     >
@@ -895,7 +895,7 @@ function ThinkingGraphic() {
         className="absolute left-1/2 top-4 h-[240px] w-[220px] -translate-x-1/2 overflow-hidden"
         style={GRAPHIC_FADE_MASK_STYLE}
       >
-        <div className="vida-assistants-carousel flex flex-col items-center gap-4">
+        <div className="vida-decision-ai-carousel flex flex-col items-center gap-4">
           {THINKING_STEPS.map((step, index) => {
             const Icon = step.icon;
 
@@ -926,9 +926,9 @@ function ExecutionGraphic() {
   return (
     <div className="absolute inset-0">
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className="vida-assistants-spin-ccw relative h-[217px] w-[217px] rounded-full border-2 border-[#2B75FF]/34 shadow-[0_0_36px_rgba(14,122,255,0.14)]">
+        <div className="vida-decision-ai-spin-ccw relative h-[217px] w-[217px] rounded-full border-2 border-[#2B75FF]/34 shadow-[0_0_36px_rgba(14,122,255,0.14)]">
           <span className="absolute -left-[15px] top-1/2 flex h-[31px] w-[31px] -translate-y-1/2 items-center justify-center rounded-full border-2 border-white/48 bg-[#3878E9] shadow-[0_0_10px_rgba(255,255,255,0.06)]">
-            <span className="vida-assistants-counter-outer flex h-full w-full items-center justify-center">
+            <span className="vida-decision-ai-counter-outer flex h-full w-full items-center justify-center">
               <X
                 className="h-[11px] w-[11px] text-white"
                 strokeWidth={2.1}
@@ -937,7 +937,7 @@ function ExecutionGraphic() {
             </span>
           </span>
           <span className="absolute -right-[15px] top-1/2 flex h-[31px] w-[31px] -translate-y-1/2 items-center justify-center rounded-full border-2 border-white/60 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(232,243,255,0.92))] shadow-[0_0_16px_rgba(14,122,255,0.18)]">
-            <span className="vida-assistants-counter-outer flex h-full w-full items-center justify-center rounded-full bg-white/86">
+            <span className="vida-decision-ai-counter-outer flex h-full w-full items-center justify-center rounded-full bg-white/86">
               <Check
                 className="h-[13px] w-[13px] text-[#0E7AFF]"
                 strokeWidth={2.1}
@@ -949,9 +949,9 @@ function ExecutionGraphic() {
       </div>
 
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className="vida-assistants-spin-cw relative h-[135px] w-[135px] rounded-full border-2 border-[#3E95FF]/60 shadow-[0_0_30px_rgba(14,122,255,0.22)]">
+        <div className="vida-decision-ai-spin-cw relative h-[135px] w-[135px] rounded-full border-2 border-[#3E95FF]/60 shadow-[0_0_30px_rgba(14,122,255,0.22)]">
           <span className="absolute left-1/2 -top-[15px] flex h-[31px] w-[31px] -translate-x-1/2 items-center justify-center rounded-full border-2 border-white/48 bg-[#3878E9] shadow-[0_0_10px_rgba(255,255,255,0.06)]">
-            <span className="vida-assistants-counter-inner flex h-full w-full items-center justify-center">
+            <span className="vida-decision-ai-counter-inner flex h-full w-full items-center justify-center">
               <X
                 className="h-[11px] w-[11px] text-white"
                 strokeWidth={2.1}
@@ -960,7 +960,7 @@ function ExecutionGraphic() {
             </span>
           </span>
           <span className="absolute left-1/2 -bottom-[15px] flex h-[31px] w-[31px] -translate-x-1/2 items-center justify-center rounded-full border-2 border-white/60 bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(232,243,255,0.92))] shadow-[0_0_16px_rgba(14,122,255,0.18)]">
-            <span className="vida-assistants-counter-inner flex h-full w-full items-center justify-center rounded-full bg-white/86">
+            <span className="vida-decision-ai-counter-inner flex h-full w-full items-center justify-center rounded-full bg-white/86">
               <Check
                 className="h-[13px] w-[13px] text-[#0E7AFF]"
                 strokeWidth={2.1}

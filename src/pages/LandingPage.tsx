@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { SectionDivider } from "../components/SectionDivider";
 import { AppShowcaseSection } from "../sections/AppShowCaseSection";
-import { AssistantsSection } from "../sections/AssistantsSection";
+import { DecisionAISection } from "../sections/DecisionAISection";
 import { FaqSection } from "../sections/FaqSection";
 import { FooterCtaSection } from "../sections/FooterCtaSection";
 import { FeaturesSection } from "../sections/FeaturesSection";
@@ -37,7 +37,7 @@ export function LandingPage() {
           <FeaturesSection />
         </div>
 
-        <AssistantsSection />
+        <DecisionAISection />
         <SectionDivider />
         <FaqSection />
         <SectionDivider />
